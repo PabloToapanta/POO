@@ -32,4 +32,11 @@ public class Jugador {
     public void recibirCartas(Carta[] cartas){
         this.mano = new Carta[cartas.length];
     }
+
+    public void incrementarPuntaje(){
+        this.puntuacion++
+    }
+    public void mostrarMano(){
+
+    }
 }
