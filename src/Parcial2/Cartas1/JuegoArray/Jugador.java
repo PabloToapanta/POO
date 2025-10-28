@@ -31,12 +31,19 @@ public class Jugador {
     }
     public void recibirCartas(Carta[] cartas){
         this.mano = new Carta[cartas.length];
+        for(int i = 0; i < cartas.length; i++){
+
+            this.mano[i] = cartas[i];
+        }
     }
 
-    public void incrementarPuntaje(){
+    public void incementarPuntaje(){
         this.puntuacion++;
     }
-    public void mostrarMano(){
-
+    public void mostrarMano (){
+        System.out.printf("Mano de %s:%n",this.nombre);
+        for(int i = 0; i < this.mano.length; i++){
+            System.out.printf("[%d] %s. ",i,this.mano[i]);
+        }
     }
 }
