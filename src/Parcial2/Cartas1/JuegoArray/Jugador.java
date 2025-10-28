@@ -34,7 +34,7 @@ public class Jugador {
     }
 
     public void incrementarPuntaje(){
-        this.puntuacion++
+        this.puntuacion++;
     }
     public void mostrarMano(){
 
