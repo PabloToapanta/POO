@@ -60,7 +60,7 @@ public class Jugador {
     }
 
     public void mostrarMano(){
-        System.out.printf("Mano de juego de %s ");
+        System.out.printf("Mano de juego de %s. (%d cartas): %n",this.nombre,this.mano.size());
         for (int i = 0; i < this.mano.size(); i++) {
             System.out.printf("[%d] %s", (i+1),this.mano.get(i));
         }
